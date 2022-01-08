@@ -11,6 +11,15 @@
 		8D87C1ED2789EB9D00202699 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1EC2789EB9D00202699 /* ContentView.swift */; };
 		8D87C1EF2789EB9E00202699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D87C1EE2789EB9E00202699 /* Assets.xcassets */; };
 		8D87C1F22789EB9E00202699 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D87C1F12789EB9E00202699 /* Preview Assets.xcassets */; };
+		8D87C1FA2789EF3D00202699 /* MagnificationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1F92789EF3D00202699 /* MagnificationGestureView.swift */; };
+		8D87C1FC2789F02E00202699 /* RotationGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1FB2789F02E00202699 /* RotationGestureView.swift */; };
+		8D87C1FE2789FD4700202699 /* PriorityGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1FD2789FD4700202699 /* PriorityGestureView.swift */; };
+		8D87C200278A00BB00202699 /* CombinedGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1FF278A00BB00202699 /* CombinedGesturesView.swift */; };
+		8D87C205278A037E00202699 /* SimpleVibrationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C204278A037E00202699 /* SimpleVibrationsView.swift */; };
+		8D87C207278A0AF300202699 /* ComplexVibrationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C206278A0AF300202699 /* ComplexVibrationsView.swift */; };
+		8D87C20A278A0CA300202699 /* HitTestView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C209278A0CA300202699 /* HitTestView1.swift */; };
+		8D87C20C278A0D6800202699 /* HitTestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C20B278A0D6800202699 /* HitTestView2.swift */; };
+		8D87C20E278A0EA800202699 /* ContinousVibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C20D278A0EA800202699 /* ContinousVibrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		8D87C1EC2789EB9D00202699 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D87C1EE2789EB9E00202699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D87C1F12789EB9E00202699 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8D87C1F92789EF3D00202699 /* MagnificationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationGestureView.swift; sourceTree = "<group>"; };
+		8D87C1FB2789F02E00202699 /* RotationGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationGestureView.swift; sourceTree = "<group>"; };
+		8D87C1FD2789FD4700202699 /* PriorityGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityGestureView.swift; sourceTree = "<group>"; };
+		8D87C1FF278A00BB00202699 /* CombinedGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedGesturesView.swift; sourceTree = "<group>"; };
+		8D87C204278A037E00202699 /* SimpleVibrationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleVibrationsView.swift; sourceTree = "<group>"; };
+		8D87C206278A0AF300202699 /* ComplexVibrationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexVibrationsView.swift; sourceTree = "<group>"; };
+		8D87C209278A0CA300202699 /* HitTestView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestView1.swift; sourceTree = "<group>"; };
+		8D87C20B278A0D6800202699 /* HitTestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestView2.swift; sourceTree = "<group>"; };
+		8D87C20D278A0EA800202699 /* ContinousVibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinousVibrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,7 @@
 		8D87C1E92789EB9C00202699 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
+				8D87C202278A017500202699 /* Techniques */,
 				8D87C1EA2789EB9D00202699 /* FlashzillaApp.swift */,
 				8D87C1EC2789EB9D00202699 /* ContentView.swift */,
 				8D87C1EE2789EB9E00202699 /* Assets.xcassets */,
@@ -65,6 +84,54 @@
 				8D87C1F12789EB9E00202699 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8D87C1F82789EF2000202699 /* Day86 */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C208278A0C8A00202699 /* HitTesting */,
+				8D87C203278A036000202699 /* Vibrations and Haptics */,
+				8D87C201278A015100202699 /* Gestures */,
+			);
+			path = Day86;
+			sourceTree = "<group>";
+		};
+		8D87C201278A015100202699 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C1F92789EF3D00202699 /* MagnificationGestureView.swift */,
+				8D87C1FB2789F02E00202699 /* RotationGestureView.swift */,
+				8D87C1FD2789FD4700202699 /* PriorityGestureView.swift */,
+				8D87C1FF278A00BB00202699 /* CombinedGesturesView.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		8D87C202278A017500202699 /* Techniques */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C1F82789EF2000202699 /* Day86 */,
+			);
+			path = Techniques;
+			sourceTree = "<group>";
+		};
+		8D87C203278A036000202699 /* Vibrations and Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C204278A037E00202699 /* SimpleVibrationsView.swift */,
+				8D87C206278A0AF300202699 /* ComplexVibrationsView.swift */,
+				8D87C20D278A0EA800202699 /* ContinousVibrationView.swift */,
+			);
+			path = "Vibrations and Haptics";
+			sourceTree = "<group>";
+		};
+		8D87C208278A0C8A00202699 /* HitTesting */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C209278A0CA300202699 /* HitTestView1.swift */,
+				8D87C20B278A0D6800202699 /* HitTestView2.swift */,
+			);
+			path = HitTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D87C1FA2789EF3D00202699 /* MagnificationGestureView.swift in Sources */,
+				8D87C200278A00BB00202699 /* CombinedGesturesView.swift in Sources */,
+				8D87C20E278A0EA800202699 /* ContinousVibrationView.swift in Sources */,
+				8D87C207278A0AF300202699 /* ComplexVibrationsView.swift in Sources */,
+				8D87C20A278A0CA300202699 /* HitTestView1.swift in Sources */,
 				8D87C1ED2789EB9D00202699 /* ContentView.swift in Sources */,
+				8D87C205278A037E00202699 /* SimpleVibrationsView.swift in Sources */,
+				8D87C1FE2789FD4700202699 /* PriorityGestureView.swift in Sources */,
+				8D87C1FC2789F02E00202699 /* RotationGestureView.swift in Sources */,
 				8D87C1EB2789EB9D00202699 /* FlashzillaApp.swift in Sources */,
+				8D87C20C278A0D6800202699 /* HitTestView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

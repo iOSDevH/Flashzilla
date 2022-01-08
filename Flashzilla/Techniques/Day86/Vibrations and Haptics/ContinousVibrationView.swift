@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ContinousVibrationView.swift
 //  Flashzilla
 //
 //  Created by Heath Fashina on 2022-01-08.
@@ -8,11 +8,11 @@
 import CoreHaptics
 import SwiftUI
 
-struct ContentView: View {
+struct ContinousVibrationView: View {
     @State private var engine: CHHapticEngine?
     
     var body: some View {
-        Text("Press to Vibrate")
+        Text("Hello World")
             .onAppear(perform: prepareHaptics)
             .onTapGesture(perform: complexSuccess)
     }
@@ -49,8 +49,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContinousVibrationView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContinousVibrationView()
     }
 }
