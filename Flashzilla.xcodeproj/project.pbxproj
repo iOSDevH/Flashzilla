@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D3C2E46278B46A1006E25C4 /* ReduceMotionView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C2E45278B46A1006E25C4 /* ReduceMotionView1.swift */; };
+		8D3C2E48278B4824006E25C4 /* ReduceMotionView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C2E47278B4824006E25C4 /* ReduceMotionView2.swift */; };
+		8D3C2E4A278B490D006E25C4 /* ReduceTransparencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C2E49278B490D006E25C4 /* ReduceTransparencyView.swift */; };
+		8D3C2E4C278B4932006E25C4 /* withOptionalAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3C2E4B278B4932006E25C4 /* withOptionalAnimation.swift */; };
 		8D87C1EB2789EB9D00202699 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1EA2789EB9D00202699 /* FlashzillaApp.swift */; };
 		8D87C1ED2789EB9D00202699 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C1EC2789EB9D00202699 /* ContentView.swift */; };
 		8D87C1EF2789EB9E00202699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D87C1EE2789EB9E00202699 /* Assets.xcassets */; };
@@ -20,9 +24,18 @@
 		8D87C20A278A0CA300202699 /* HitTestView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C209278A0CA300202699 /* HitTestView1.swift */; };
 		8D87C20C278A0D6800202699 /* HitTestView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C20B278A0D6800202699 /* HitTestView2.swift */; };
 		8D87C20E278A0EA800202699 /* ContinousVibrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C20D278A0EA800202699 /* ContinousVibrationView.swift */; };
+		8D87C211278B3E4500202699 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C210278B3E4500202699 /* TimerView.swift */; };
+		8D87C213278B401500202699 /* MoveToBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C212278B401500202699 /* MoveToBackgroundView.swift */; };
+		8D87C217278B420300202699 /* DifferentiateColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C216278B420200202699 /* DifferentiateColorView.swift */; };
+		8DEAC97E278BB1BD00AC8FA4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC97D278BB1BD00AC8FA4 /* Card.swift */; };
+		8DEAC980278BB30200AC8FA4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC97F278BB30200AC8FA4 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D3C2E45278B46A1006E25C4 /* ReduceMotionView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView1.swift; sourceTree = "<group>"; };
+		8D3C2E47278B4824006E25C4 /* ReduceMotionView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceMotionView2.swift; sourceTree = "<group>"; };
+		8D3C2E49278B490D006E25C4 /* ReduceTransparencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduceTransparencyView.swift; sourceTree = "<group>"; };
+		8D3C2E4B278B4932006E25C4 /* withOptionalAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = withOptionalAnimation.swift; sourceTree = "<group>"; };
 		8D87C1E72789EB9C00202699 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D87C1EA2789EB9D00202699 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
 		8D87C1EC2789EB9D00202699 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +50,11 @@
 		8D87C209278A0CA300202699 /* HitTestView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestView1.swift; sourceTree = "<group>"; };
 		8D87C20B278A0D6800202699 /* HitTestView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitTestView2.swift; sourceTree = "<group>"; };
 		8D87C20D278A0EA800202699 /* ContinousVibrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinousVibrationView.swift; sourceTree = "<group>"; };
+		8D87C210278B3E4500202699 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		8D87C212278B401500202699 /* MoveToBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToBackgroundView.swift; sourceTree = "<group>"; };
+		8D87C216278B420200202699 /* DifferentiateColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiateColorView.swift; sourceTree = "<group>"; };
+		8DEAC97D278BB1BD00AC8FA4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8DEAC97F278BB30200AC8FA4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +87,11 @@
 		8D87C1E92789EB9C00202699 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
-				8D87C202278A017500202699 /* Techniques */,
 				8D87C1EA2789EB9D00202699 /* FlashzillaApp.swift */,
-				8D87C1EC2789EB9D00202699 /* ContentView.swift */,
+				8D87C202278A017500202699 /* Techniques */,
+				8DEAC97B278BB1A300AC8FA4 /* Models */,
+				8DEAC97A278BB19C00AC8FA4 /* Views */,
+				8DEAC97C278BB1AB00AC8FA4 /* ViewModels */,
 				8D87C1EE2789EB9E00202699 /* Assets.xcassets */,
 				8D87C1F02789EB9E00202699 /* Preview Content */,
 			);
@@ -110,7 +130,9 @@
 		8D87C202278A017500202699 /* Techniques */ = {
 			isa = PBXGroup;
 			children = (
+				8D87C20F278B2C6900202699 /* Day87 */,
 				8D87C1F82789EF2000202699 /* Day86 */,
+				8D3C2E4B278B4932006E25C4 /* withOptionalAnimation.swift */,
 			);
 			path = Techniques;
 			sourceTree = "<group>";
@@ -132,6 +154,43 @@
 				8D87C20B278A0D6800202699 /* HitTestView2.swift */,
 			);
 			path = HitTesting;
+			sourceTree = "<group>";
+		};
+		8D87C20F278B2C6900202699 /* Day87 */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C210278B3E4500202699 /* TimerView.swift */,
+				8D87C212278B401500202699 /* MoveToBackgroundView.swift */,
+				8D87C216278B420200202699 /* DifferentiateColorView.swift */,
+				8D3C2E45278B46A1006E25C4 /* ReduceMotionView1.swift */,
+				8D3C2E47278B4824006E25C4 /* ReduceMotionView2.swift */,
+				8D3C2E49278B490D006E25C4 /* ReduceTransparencyView.swift */,
+			);
+			path = Day87;
+			sourceTree = "<group>";
+		};
+		8DEAC97A278BB19C00AC8FA4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D87C1EC2789EB9D00202699 /* ContentView.swift */,
+				8DEAC97F278BB30200AC8FA4 /* CardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8DEAC97B278BB1A300AC8FA4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DEAC97D278BB1BD00AC8FA4 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DEAC97C278BB1AB00AC8FA4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,13 +265,22 @@
 			files = (
 				8D87C1FA2789EF3D00202699 /* MagnificationGestureView.swift in Sources */,
 				8D87C200278A00BB00202699 /* CombinedGesturesView.swift in Sources */,
+				8DEAC97E278BB1BD00AC8FA4 /* Card.swift in Sources */,
+				8D3C2E46278B46A1006E25C4 /* ReduceMotionView1.swift in Sources */,
+				8D87C213278B401500202699 /* MoveToBackgroundView.swift in Sources */,
 				8D87C20E278A0EA800202699 /* ContinousVibrationView.swift in Sources */,
 				8D87C207278A0AF300202699 /* ComplexVibrationsView.swift in Sources */,
 				8D87C20A278A0CA300202699 /* HitTestView1.swift in Sources */,
+				8D3C2E4A278B490D006E25C4 /* ReduceTransparencyView.swift in Sources */,
 				8D87C1ED2789EB9D00202699 /* ContentView.swift in Sources */,
+				8D87C211278B3E4500202699 /* TimerView.swift in Sources */,
 				8D87C205278A037E00202699 /* SimpleVibrationsView.swift in Sources */,
+				8D87C217278B420300202699 /* DifferentiateColorView.swift in Sources */,
 				8D87C1FE2789FD4700202699 /* PriorityGestureView.swift in Sources */,
+				8DEAC980278BB30200AC8FA4 /* CardView.swift in Sources */,
 				8D87C1FC2789F02E00202699 /* RotationGestureView.swift in Sources */,
+				8D3C2E4C278B4932006E25C4 /* withOptionalAnimation.swift in Sources */,
+				8D3C2E48278B4824006E25C4 /* ReduceMotionView2.swift in Sources */,
 				8D87C1EB2789EB9D00202699 /* FlashzillaApp.swift in Sources */,
 				8D87C20C278A0D6800202699 /* HitTestView2.swift in Sources */,
 			);
@@ -352,7 +420,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,7 +449,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
