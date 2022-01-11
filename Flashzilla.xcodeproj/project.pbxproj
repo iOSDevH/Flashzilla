@@ -29,6 +29,7 @@
 		8D87C217278B420300202699 /* DifferentiateColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C216278B420200202699 /* DifferentiateColorView.swift */; };
 		8DEAC97E278BB1BD00AC8FA4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC97D278BB1BD00AC8FA4 /* Card.swift */; };
 		8DEAC980278BB30200AC8FA4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC97F278BB30200AC8FA4 /* CardView.swift */; };
+		8DEAC983278D1BF400AC8FA4 /* Extension-Stacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC982278D1BF400AC8FA4 /* Extension-Stacked.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8D87C216278B420200202699 /* DifferentiateColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiateColorView.swift; sourceTree = "<group>"; };
 		8DEAC97D278BB1BD00AC8FA4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8DEAC97F278BB30200AC8FA4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		8DEAC982278D1BF400AC8FA4 /* Extension-Stacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Stacked.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				8D87C1EA2789EB9D00202699 /* FlashzillaApp.swift */,
+				8DEAC981278D1BD100AC8FA4 /* Extensions */,
 				8D87C202278A017500202699 /* Techniques */,
 				8DEAC97B278BB1A300AC8FA4 /* Models */,
 				8DEAC97A278BB19C00AC8FA4 /* Views */,
@@ -132,7 +135,6 @@
 			children = (
 				8D87C20F278B2C6900202699 /* Day87 */,
 				8D87C1F82789EF2000202699 /* Day86 */,
-				8D3C2E4B278B4932006E25C4 /* withOptionalAnimation.swift */,
 			);
 			path = Techniques;
 			sourceTree = "<group>";
@@ -191,6 +193,15 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8DEAC981278D1BD100AC8FA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D3C2E4B278B4932006E25C4 /* withOptionalAnimation.swift */,
+				8DEAC982278D1BF400AC8FA4 /* Extension-Stacked.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				8D87C20E278A0EA800202699 /* ContinousVibrationView.swift in Sources */,
 				8D87C207278A0AF300202699 /* ComplexVibrationsView.swift in Sources */,
 				8D87C20A278A0CA300202699 /* HitTestView1.swift in Sources */,
+				8DEAC983278D1BF400AC8FA4 /* Extension-Stacked.swift in Sources */,
 				8D3C2E4A278B490D006E25C4 /* ReduceTransparencyView.swift in Sources */,
 				8D87C1ED2789EB9D00202699 /* ContentView.swift in Sources */,
 				8D87C211278B3E4500202699 /* TimerView.swift in Sources */,
