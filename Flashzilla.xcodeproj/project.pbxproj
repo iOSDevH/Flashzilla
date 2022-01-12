@@ -27,6 +27,7 @@
 		8D87C211278B3E4500202699 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C210278B3E4500202699 /* TimerView.swift */; };
 		8D87C213278B401500202699 /* MoveToBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C212278B401500202699 /* MoveToBackgroundView.swift */; };
 		8D87C217278B420300202699 /* DifferentiateColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87C216278B420200202699 /* DifferentiateColorView.swift */; };
+		8DDCF018278E78E000C56600 /* EditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDCF017278E78E000C56600 /* EditCardsView.swift */; };
 		8DEAC97E278BB1BD00AC8FA4 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC97D278BB1BD00AC8FA4 /* Card.swift */; };
 		8DEAC980278BB30200AC8FA4 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC97F278BB30200AC8FA4 /* CardView.swift */; };
 		8DEAC983278D1BF400AC8FA4 /* Extension-Stacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEAC982278D1BF400AC8FA4 /* Extension-Stacked.swift */; };
@@ -54,6 +55,7 @@
 		8D87C210278B3E4500202699 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		8D87C212278B401500202699 /* MoveToBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveToBackgroundView.swift; sourceTree = "<group>"; };
 		8D87C216278B420200202699 /* DifferentiateColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentiateColorView.swift; sourceTree = "<group>"; };
+		8DDCF017278E78E000C56600 /* EditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCardsView.swift; sourceTree = "<group>"; };
 		8DEAC97D278BB1BD00AC8FA4 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8DEAC97F278BB30200AC8FA4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8DEAC982278D1BF400AC8FA4 /* Extension-Stacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-Stacked.swift"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				8D87C1EC2789EB9D00202699 /* ContentView.swift */,
 				8DEAC97F278BB30200AC8FA4 /* CardView.swift */,
+				8DDCF017278E78E000C56600 /* EditCardsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				8D87C200278A00BB00202699 /* CombinedGesturesView.swift in Sources */,
 				8DEAC97E278BB1BD00AC8FA4 /* Card.swift in Sources */,
 				8D3C2E46278B46A1006E25C4 /* ReduceMotionView1.swift in Sources */,
+				8DDCF018278E78E000C56600 /* EditCardsView.swift in Sources */,
 				8D87C213278B401500202699 /* MoveToBackgroundView.swift in Sources */,
 				8D87C20E278A0EA800202699 /* ContinousVibrationView.swift in Sources */,
 				8D87C207278A0AF300202699 /* ComplexVibrationsView.swift in Sources */,

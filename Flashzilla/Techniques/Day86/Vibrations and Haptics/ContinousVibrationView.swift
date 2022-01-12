@@ -9,12 +9,18 @@ import CoreHaptics
 import SwiftUI
 
 struct ContinousVibrationView: View {
+    @Environment(\.scenePhase) var scenePhase
     @State private var engine: CHHapticEngine?
     
     var body: some View {
-        Text("Hello World")
+        Text("Tap to vibrate")
             .onAppear(perform: prepareHaptics)
             .onTapGesture(perform: complexSuccess)
+            .onChange(of: scenePhase) { newPhase in
+                if newPhase == .active {
+                    prepareHaptics()
+                }
+            }
     }
     
     func prepareHaptics() {
