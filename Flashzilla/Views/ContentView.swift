@@ -12,7 +12,6 @@ struct ContentView: View {
     @Environment(\.accessibilityVoiceOverEnabled) var voiceOverEnabled
     
     @StateObject private var cardsVM = CardViewModel(permanentDeletion: false)
-    //@State private var cards = [Card]()
     
     @State private var timeRemaining = 100
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -21,7 +20,7 @@ struct ContentView: View {
     @State private var isActive = true
     
     @State private var showingEditScreen = false
-    @State private var cardsAreEmpty = false
+    //@State private var cardsAreEmpty = false
     
     var body: some View {
         ZStack {
@@ -30,17 +29,6 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack {
-                if cardsAreEmpty {
-                    Spacer()
-                        .frame(height: 25)
-                    
-                    Text("Add some cards to begin --->")
-                        .font(.largeTitle)
-                        .foregroundColor(.white)
-                    
-                    Spacer ()
-                }
-                
                 Text("Time: \(timeRemaining)")
                     .font(.largeTitle)
                     .foregroundColor(.white)
@@ -64,7 +52,15 @@ struct ContentView: View {
                 .allowsHitTesting(timeRemaining > 0)
                 
                 if cardsVM.cards.isEmpty {
-                    Button("Start Again", action: resetCards)
+                    Button("\(cardsVM.cardsAreEmpty ? "Add Card" : "Start Again")") {
+                        if cardsVM.cardsAreEmpty {
+                            showingEditScreen = true
+                        } else {
+                            resetCards()
+                        }
+                        
+                        
+                    }
                         .padding()
                         .background(.white)
                         .foregroundColor(.black)
@@ -149,7 +145,9 @@ struct ContentView: View {
             }
         }
         .onChange(of: showingEditScreen) { _ in
-            resetCards()
+            if showingEditScreen == false {
+                resetCards()
+            }
         }
         .sheet(isPresented: $showingEditScreen, onDismiss: resetCards, content: EditCardsView.init)
         .onAppear(perform: resetCards)
@@ -167,6 +165,9 @@ struct ContentView: View {
         timeRemaining = 100
         isActive = true
         cardsVM.loadData()
+        if cardsVM.cardsAreEmpty {
+            isActive = false
+        }
     }
 }
 

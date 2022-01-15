@@ -9,6 +9,8 @@ import Foundation
 
 class CardViewModel: ObservableObject {
     @Published var cards: [Card]
+    var cardsAreEmpty = true
+    
     let permanentDeletion: Bool
     
     let savePath = FileManager.documentsDirectory.appendingPathComponent("SavedCards")
@@ -23,8 +25,14 @@ class CardViewModel: ObservableObject {
         do {
             let data = try Data(contentsOf: savePath)
             cards = try JSONDecoder().decode([Card].self, from: data)
+            if cards.isEmpty {
+                cardsAreEmpty = true
+            } else {
+                cardsAreEmpty = false
+            }
         } catch {
             cards = []
+            cardsAreEmpty = true
         }
     }
     
@@ -63,5 +71,6 @@ class CardViewModel: ObservableObject {
             saveData()
         }
     }
+    
     
 }
