@@ -36,15 +36,19 @@ struct ContentView: View {
                     .clipShape(Capsule())
                 
                 ZStack {
-                    ForEach(0..<cards.count, id: \.self) { index in
-                        CardView(card: cards[index]) {
+                    ForEach(cards, id: \.id) { card in
+                        CardView(card: card) { isCorrectAnswer in
                             withAnimation {
-                                removeCard(at: index)
+                                removeCard(at: cards.firstIndex(of: card)!, isCorrectanswer: isCorrectAnswer )
                             }
                         }
-                        .stacked(at: index, in: cards.count)
-                        .allowsHitTesting(index == cards.count - 1)
-                        .accessibilityHidden(index < cards.count - 1)
+                        .stacked(at: cards.firstIndex(of: card)!, in: cards.count)
+                        .allowsHitTesting(card == cards.last)
+                        .accessibilityHidden(card != cards.last)
+                        
+//                        Text("Index is: \(cards.firstIndex(of: card)!)")
+//                            .foregroundColor(.black)
+//                            .offset(y: 100)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
@@ -85,7 +89,7 @@ struct ContentView: View {
                     HStack {
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, isCorrectanswer: false)
                             }
                         } label: {
                             Image(systemName: "xmark.circle")
@@ -100,7 +104,7 @@ struct ContentView: View {
                         
                         Button {
                             withAnimation {
-                                removeCard(at: cards.count - 1)
+                                removeCard(at: cards.count - 1, isCorrectanswer: true)
                             }
                         } label: {
                             Image(systemName: "checkmark.circle")
@@ -147,23 +151,21 @@ struct ContentView: View {
         }
     }
     
-    func removeCard(at index: Int) {
+    func removeCard(at index: Int, isCorrectanswer: Bool) {
         guard index >= 0 else { return }
         
-        cards.remove(at: index)
+        if isCorrectanswer == false {
+            let card = Card(prompt: cards[index].prompt, answer: cards[index].answer)
+            cards.remove(at: index)
+            cards.insert(card, at: 0)
+        } else {
+            cards.remove(at: index)
+        }
+        
         
         if cards.isEmpty {
             isActive = false
         }
-    }
-    
-    func restockCard(at index: Int) {
-        guard index >= 0 else { return }
-        
-        let card = cards[index]
-        cards.append(card)
-        
-        removeCard(at: index)
     }
     
     func resetCards() {
@@ -176,6 +178,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-.previewInterfaceOrientation(.landscapeRight)
+            .previewInterfaceOrientation(.landscapeRight)
     }
 }

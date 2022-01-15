@@ -9,7 +9,9 @@ import SwiftUI
 
 struct CardView: View {
     let card: Card
-    var removal: (() -> Void)? = nil
+    var removal: ((Bool) -> Void)? = nil
+    
+    @State private var isCorrectAnswer = true
     
     @State private var feedback = UINotificationFeedbackGenerator()
     
@@ -68,8 +70,11 @@ struct CardView: View {
                     if abs(offset.width) > 100 {
                         if offset.width < 0 {
                             feedback.notificationOccurred(.error)
+                            isCorrectAnswer = false
+                        } else {
+                            isCorrectAnswer = true
                         }
-                        removal?()
+                        removal?(isCorrectAnswer)
                     } else {
                         withAnimation {
                             offset = .zero
