@@ -157,6 +157,15 @@ struct ContentView: View {
         }
     }
     
+    func restockCard(at index: Int) {
+        guard index >= 0 else { return }
+        
+        let card = cards[index]
+        cards.append(card)
+        
+        removeCard(at: index)
+    }
+    
     func resetCards() {
         timeRemaining = 100
         isActive = true

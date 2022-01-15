@@ -43,6 +43,7 @@ struct EditCardsView: View {
                     .onDelete(perform: removeCards)
                 }
             }
+            .padding()
             .navigationTitle("Edit Cards")
             .toolbar {
                 Button("Done", action: done)
@@ -79,6 +80,8 @@ struct EditCardsView: View {
         let card = Card(prompt: trimmedPrompt, answer: trimmedAnswer)
         cards.insert(card, at: 0)
         saveData()
+        newPrompt = ""
+        newAnswer = ""
     }
     
     func removeCards(at offsets: IndexSet) {
@@ -90,5 +93,6 @@ struct EditCardsView: View {
 struct EditCardsView_Previews: PreviewProvider {
     static var previews: some View {
         EditCardsView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

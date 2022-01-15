@@ -55,8 +55,8 @@ struct CardView: View {
         }
         .frame(width: 450, height: 250)
         .rotationEffect(.degrees(Double(offset.width / 5)))
-        .offset(x: offset.width * 5, y: 0)
-        .opacity(2 - Double(abs(offset.width / 50)))
+        .offset(x: offset.width * 2, y: 0)
+        .opacity(2 - Double(abs(offset.width / 100)))
         .accessibilityAddTraits(.isButton)
         .gesture(
             DragGesture()
@@ -71,7 +71,10 @@ struct CardView: View {
                         }
                         removal?()
                     } else {
-                        offset = .zero
+                        withAnimation {
+                            offset = .zero
+                        }
+                        
                     }
                 }
         )
