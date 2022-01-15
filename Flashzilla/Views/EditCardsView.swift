@@ -17,7 +17,8 @@ import SwiftUI
 struct EditCardsView: View {
     @Environment(\.dismiss) var dismiss
     
-    @State private var cards = [Card]()
+    @StateObject private var editVM = CardViewModel(permanentDeletion: true)
+    
     @State private var newPrompt = ""
     @State private var newAnswer = ""
     
@@ -27,16 +28,20 @@ struct EditCardsView: View {
                 Section("Add new card") {
                     TextField("Prompt", text: $newPrompt)
                     TextField("Answer", text: $newAnswer)
-                    Button("Add card", action: addCard)
+                    Button {
+                        addCard(prompt: newPrompt, answer: newAnswer)
+                    } label: {
+                        Text("Add Card")
+                    }
                 }
                 
                 Section {
-                    ForEach(0..<cards.count, id: \.self) { index in
+                    ForEach(editVM.cards, id: \.id) { card in
                         VStack(alignment: .leading) {
-                            Text(cards[index].prompt)
+                            Text(card.prompt)
                                 .font(.headline)
                             
-                            Text(cards[index].answer)
+                            Text(card.answer)
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -49,7 +54,7 @@ struct EditCardsView: View {
                 Button("Done", action: done)
             }
             .listStyle(.grouped)
-            .onAppear(perform: loadData)
+            .onAppear(perform: editVM.loadData)
         }
     }
     
@@ -57,36 +62,16 @@ struct EditCardsView: View {
         dismiss()
     }
     
-    func loadData() {
-        if let data = UserDefaults.standard.data(forKey: "Cards") {
-            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
-                cards = decoded
-            }
-        }
-    }
-    
-    func saveData() {
-        if let data = try? JSONEncoder().encode(cards) {
-            UserDefaults.standard.set(data, forKey: "Cards")
-        }
-    }
-    
-    func addCard() {
-        let trimmedPrompt = newPrompt.trimmingCharacters(in: .whitespaces)
-        let trimmedAnswer = newAnswer.trimmingCharacters(in: .whitespaces)
-        
-        guard trimmedPrompt.isEmpty == false && trimmedAnswer.isEmpty == false else { return }
-        
-        let card = Card(prompt: trimmedPrompt, answer: trimmedAnswer)
-        cards.insert(card, at: 0)
-        saveData()
+    func addCard(prompt: String, answer: String) {
+        editVM.addCard(prompt: newPrompt, answer: newAnswer)
         newPrompt = ""
         newAnswer = ""
     }
     
     func removeCards(at offsets: IndexSet) {
-        cards.remove(atOffsets: offsets)
-        saveData()
+        for i in offsets {
+            editVM.removeCard(at: i)
+        }
     }
 }
 
