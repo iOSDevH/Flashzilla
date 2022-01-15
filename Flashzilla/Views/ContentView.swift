@@ -45,10 +45,6 @@ struct ContentView: View {
                         .stacked(at: cards.firstIndex(of: card)!, in: cards.count)
                         .allowsHitTesting(card == cards.last)
                         .accessibilityHidden(card != cards.last)
-                        
-//                        Text("Index is: \(cards.firstIndex(of: card)!)")
-//                            .foregroundColor(.black)
-//                            .offset(y: 100)
                     }
                 }
                 .allowsHitTesting(timeRemaining > 0)
